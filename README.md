@@ -1,2 +1,2 @@
 # alexejklass.github.io
-My web developer portfolio.
+My journey as a web developer.

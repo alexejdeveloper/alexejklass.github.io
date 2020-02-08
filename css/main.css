@@ -479,6 +479,7 @@ body::selection {
 .footer:hover svg {
   width: 7rem;
   height: 7rem;
+  margin-bottom: 1rem;
 }
 
 .footer__nav {

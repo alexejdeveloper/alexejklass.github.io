@@ -76,8 +76,8 @@ body::selection {
 }
 
 .header:hover {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
 }
 
 .header__gradient {
@@ -473,14 +473,12 @@ body::selection {
 }
 
 .footer:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
   height: 12rem;
 }
 
 .footer:hover svg {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 .footer__nav {

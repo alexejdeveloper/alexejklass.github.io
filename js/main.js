@@ -4,12 +4,13 @@ const headerText = 'Web Developer';
 const headerAnimation = document.querySelector('.header__animation');
 const main = document.querySelector('.main').getBoundingClientRect().top;
 const techs = document.querySelectorAll('.main__icons img');
+document.querySelector('footer').addEventListener('click', () => window.scrollTo({ top: 0, left: 0, behavior: "smooth" }));
 
 const chooseTech = (event) => {
     const cubes = document.querySelectorAll('div.cube');
     techs.forEach(value => value.classList.remove('active'));
     const visibleCubes = document.querySelectorAll('div.cube.' + event.target.className);
-    
+
     cubes.forEach(value => {
         value.style.display = "none";
     });
@@ -17,7 +18,7 @@ const chooseTech = (event) => {
         value.style.display = "block";
     });
     event.target.classList.add('active');
-    
+
 };
 
 techs.forEach(value => value.addEventListener('click', chooseTech));

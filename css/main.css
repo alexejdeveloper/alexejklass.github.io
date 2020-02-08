@@ -343,9 +343,8 @@ nav svg:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: linear-gradient(-45deg, #24e955, #23a5d5f3, #23a5d5f8, #23d5abef);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
@@ -370,9 +369,9 @@ nav svg:hover {
   transition: transform .33s, -webkit-transform .33s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  margin: 1rem;
+  margin: 1rem .4rem;
   height: 60px;
-  width: 22%;
+  width: 23%;
 }
 
 .cube:hover {

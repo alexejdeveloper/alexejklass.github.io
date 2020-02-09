@@ -7,7 +7,7 @@ const techs = document.querySelectorAll('.main__icons img');
 document.querySelector('footer').addEventListener('click', () => window.scrollTo({ top: 0, left: 0, behavior: "smooth" }));
 
 document.querySelectorAll('div.cube').forEach(value => {
-    value.addEventListener('mouseover', (event) => {
+    value.addEventListener('click', (event) => {
         document.querySelectorAll('div.cube').forEach(value => value.classList.remove('rotate'));
         event.currentTarget.classList.add('rotate');
     }) 

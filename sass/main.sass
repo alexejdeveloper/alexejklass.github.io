@@ -13,6 +13,12 @@ html
     box-sizing: border-box
     font-size: 62.5% // 10px/16px = 62.5% -> 1rem = 10px
 
+@media screen and ( max-width: 800px )
+    html
+        font-size: 40%
+    .cube
+        width: 45%
+
 body
     font-family: 'Lato', Arial, sans-serif
     font-weight: normal
@@ -34,11 +40,9 @@ body
         &:hover
             fill: #2c2c2c
 .header
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 80vh)
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
     height: 95vh
     transition: all 1s ease-out
-    &:hover
-        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%)
     &__gradient
         background: linear-gradient(-45deg, #24e955, #23a5d5f3, #23a5d5f8, #23d5abef)
         background-size: 400% 400%
@@ -94,6 +98,10 @@ body
         margin-top: 4rem
         clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%)
         transition: all .3s ease-out
+
+@media screen and ( max-width: 800px )
+    .header
+        height: 85vh
 
 @keyframes gradient
     0%
@@ -155,8 +163,7 @@ body
             transition: all .3s ease
             &:hover
                 transform: scale(2)
-                filter: drop-shadow(2px 2px 4px #3232a586)
-                
+                filter: drop-shadow(2px 2px 4px #3232a586)             
     &__projects
         width: 90%
         min-height: 60px
@@ -172,8 +179,11 @@ body
         transition: filter .3s ease-out
         &:hover
             filter: drop-shadow(10px 10px 2px #3232a5)
-
-            
+@media screen and ( max-width: 800px )
+    .main
+        margin-top: -10vh
+        &__container
+            width: 98%           
 
 .active
     transform: scale(2)
@@ -183,7 +193,7 @@ body
     text-align: center
     transition: transform .33s
     transform-style: preserve-3d
-    margin: 1rem .4rem
+    margin: 1rem  .4rem
     height: 60px
     width: 23%
     &:hover
@@ -212,6 +222,17 @@ body
             transition: all .3s ease-out
             &:hover
                 fill: #2c2c2c
+@media screen and ( max-width: 1200px )
+    .cube
+        width: 30%
+        margin: 1%
+@media screen and ( max-width: 800px )
+    .cube
+        width: 48%
+        margin: 1%
+@media screen and ( max-width: 420px )
+    .cube
+        width: 90%
 
 .footer
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%)

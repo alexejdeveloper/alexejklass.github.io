@@ -464,13 +464,6 @@ body::selection {
   }
 }
 
-@media screen and (max-width: 420px) {
-  .cube {
-    width: 90%;
-    margin-top: 2%;
-  }
-}
-
 .footer {
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);

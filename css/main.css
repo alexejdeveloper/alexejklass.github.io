@@ -361,9 +361,11 @@ body::selection {
   transition: filter .3s ease-out, -webkit-filter .3s ease-out;
 }
 
-.main__projects:hover {
-  -webkit-filter: drop-shadow(10px 10px 2px #3232a5);
-          filter: drop-shadow(10px 10px 2px #3232a5);
+@media screen and (min-width: 801px) {
+  .main__projects {
+    -webkit-filter: drop-shadow(10px 10px 2px #3232a5);
+            filter: drop-shadow(10px 10px 2px #3232a5);
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -376,7 +378,6 @@ body::selection {
   .main__projects {
     -webkit-animation: none;
             animation: none;
-    hover-filter: none;
   }
 }
 

@@ -392,11 +392,6 @@ body::selection {
           filter: drop-shadow(2px 2px 4px #3232a586);
 }
 
-.rotate {
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
-}
-
 .cube {
   text-align: center;
   -webkit-transition: -webkit-transform .33s;
@@ -408,6 +403,11 @@ body::selection {
   margin: 1rem  .4rem;
   height: 60px;
   width: 23%;
+}
+
+.cube:hover {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
 }
 
 .cube__front, .cube__back {

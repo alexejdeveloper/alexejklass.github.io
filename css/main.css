@@ -459,8 +459,8 @@ body::selection {
 
 @media screen and (max-width: 800px) {
   .cube {
-    width: 48%;
-    margin: 1%;
+    width: 46%;
+    margin: 2%;
   }
 }
 

@@ -198,7 +198,10 @@ body
 .active
     transform: scale(2)
     filter: drop-shadow(2px 2px 4px #3232a586)
-    
+
+.rotate
+    transform: rotateX(90deg) 
+
 .cube
     text-align: center
     transition: transform .33s
@@ -207,7 +210,7 @@ body
     height: 60px
     width: 23%
     &:hover
-        transform: rotateX(90deg)
+        //transform: rotateX(90deg)
     &__front, &__back
         background: #00000013
         box-shadow: 0 5px 4px #00000041

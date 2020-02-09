@@ -373,6 +373,10 @@ body::selection {
   .main__container {
     width: 98%;
   }
+  .main__projects {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .active {
@@ -520,5 +524,12 @@ body::selection {
 
 .footer__nav svg:hover {
   fill: #2c2c2c;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

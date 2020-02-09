@@ -88,6 +88,7 @@ body::selection {
   width: 100%;
   height: 100%;
   z-index: 1;
+  opacity: .98;
 }
 
 .header__greeting {
@@ -118,8 +119,9 @@ body::selection {
 }
 
 .header__hero {
-  background-image: url("../img/hero.webp");
+  background-image: url("../img/hero1.webp");
   background-size: cover;
+  background-position: top;
   position: absolute;
   width: 100%;
   height: 100%;

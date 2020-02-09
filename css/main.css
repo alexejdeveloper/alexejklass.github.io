@@ -362,7 +362,7 @@ body::selection {
 }
 
 @media screen and (min-width: 801px) {
-  .main__projects {
+  .main__projects:hover {
     -webkit-filter: drop-shadow(10px 10px 2px #3232a5);
             filter: drop-shadow(10px 10px 2px #3232a5);
   }

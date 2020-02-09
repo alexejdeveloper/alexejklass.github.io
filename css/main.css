@@ -378,6 +378,8 @@ body::selection {
   .main__projects {
     -webkit-animation: none;
             animation: none;
+    -webkit-filter: drop-shadow(10px 10px 2px #3232a5);
+            filter: drop-shadow(10px 10px 2px #3232a5);
   }
 }
 

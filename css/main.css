@@ -376,6 +376,7 @@ body::selection {
   .main__projects {
     -webkit-animation: none;
             animation: none;
+    hover-filter: none;
   }
 }
 

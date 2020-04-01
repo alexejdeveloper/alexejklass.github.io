@@ -39,6 +39,15 @@ body::selection {
   color: white;
 }
 
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .nav {
   position: fixed;
   right: 2rem;
